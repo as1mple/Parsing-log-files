@@ -23,6 +23,7 @@ for filename in os.listdir(PATH_TO_LOGS_FOLDER):
                 timestamp, level, user_id, info = match.groups()
                 log_data.append([timestamp, level, user_id, info])
 
-# Create DataFrame
-df = pd.DataFrame(log_data, columns=['datetime', 'level', 'user_id', 'information'])
-df.to_csv(f"{PATH_TO_SAVE_FOLDER}/logs.csv", index=False)
+# Create and save DataFrame
+pd.DataFrame(log_data, columns=['datetime', 'level', 'user_id', 'information'])\
+  .sort_values("datetime")\
+  .to_csv(f"{PATH_TO_SAVE_FOLDER}/logs.csv", index=False)
