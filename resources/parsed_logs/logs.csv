@@ -1,0 +1,6 @@
+datetime,level,user_id,information
+2023-01-19T07:18:41.929040+0000,INFO,572256777,Sent audio message
+2023-01-19T07:18:49.298106+0000,INFO,572256777,Recognition text => Приклад збереження логів
+2023-01-19T07:19:07.128429+0000,INFO,572256777,Asked for save data => Yes
+2023-01-19T07:19:37.574467+0000,INFO,572256777,Input description => MDE_26
+2023-01-19T07:19:37.574756+0000,INFO,572256777,"Updated settings => {'language': 'uk-UA', 'description': 'Example'}"
